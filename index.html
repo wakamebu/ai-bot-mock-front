@@ -1,0 +1,35 @@
+<!doctype html>
+<html lang="ja">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>チャットの比較</title>
+  </head>
+  <body>
+    <header class="toolbar">
+      <h1>チャットの比較</h1>
+      <label>
+        公開キー
+        <input id="widget-key" spellcheck="false" />
+      </label>
+      <div id="backends"></div>
+      <button id="reset" type="button">新しい会話</button>
+    </header>
+
+    <main id="columns"></main>
+
+    <footer>
+      <div id="samples"></div>
+      <form id="composer">
+        <textarea
+          id="message"
+          rows="2"
+          placeholder="質問を入力（Enter で送信、Shift+Enter で改行）。選んだバックエンドすべてに送ります"
+        ></textarea>
+        <button type="submit">送信</button>
+      </form>
+    </footer>
+
+    <script type="module" src="/src/main.ts"></script>
+  </body>
+</html>
